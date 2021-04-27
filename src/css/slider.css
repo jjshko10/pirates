@@ -1,0 +1,139 @@
+.slider {
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+}
+
+.slides {
+	height: 250px;
+}
+
+.slides article {
+	width: 20%;
+	float: left;
+}
+
+.slides .image {
+	width: 500%;
+	line-height: 0;
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.overflow {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slide-image {
+	width: 100%;
+}
+
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4) {
+	float: left;
+	margin: 0 0 0 -84px;
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1) {
+	float: right;
+	margin: 0 -84px 0 0;
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+.slider-content input {
+	display: none;
+}
+
+#switch1:checked ~ .slides .image {
+	margin-left: 0;
+}
+
+#switch2:checked ~ .slides .image {
+	margin-left: -100%;
+}
+
+#switch3:checked ~ .slides .image {
+	margin-left: -200%;
+}
+
+#switch4:checked ~ .slides .image {
+	margin-left: -300%;
+}
+
+#switch5:checked ~ .slides .image {
+	margin-left: -400%;
+}
+
+#controls {
+	width: 100%;
+	height: 50px;
+}
+
+#active label { 
+	border-radius: 10px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+}
+
+#active{ 
+	text-align: center;
+}
+
+#active label:hover {
+    cursor: pointer;
+	background: #76c8ff;
+	border-color: #777 !important;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5){
+	background: #18a3dd;
+	border-color: #18a3dd !important;
+}
+
+#controls label:hover {
+	opacity: 0.6;
+}
+
+#controls label{
+	transition: opacity 0.2s ease-out;
+}
+
+.slider-buttons {
+    display: flex;
+    margin-top: 45px;
+}
+
+.slider-button {
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.slider-button:not(:last-child) {
+    margin-right: 15px;
+}
+
+.slider-button:hover {
+	opacity: 0.7;
+	transform: scale(1.1);
+}

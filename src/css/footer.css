@@ -1,0 +1,33 @@
+.footer {
+    height: 180px;
+    width: 100%;
+    border-top: 5px solid red;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(90deg, #b9deed, #efefef);
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-image {
+    height: 100px;
+}
+
+.footer-heading, .captain {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.captain {
+    color: #996633;
+}
+
+.footer-description {
+    font-size: 15px;
+    font-style: italic;
+}

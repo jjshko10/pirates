@@ -1,0 +1,42 @@
+.buy-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.buy-form-header {
+    text-align: center;
+}
+
+.buy-form-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-form-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-form-item {
+    display: flex;
+    align-items: center;
+}
+
+.buy-form-item-div, .input-name, .input-price, .input-number, .input-class {
+    width: 100%;
+    padding-left: 5px;
+}
+
+.buy-form-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.buy-form-button {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    cursor: pointer;
+}
+

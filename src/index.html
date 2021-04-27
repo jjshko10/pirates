@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+  <title>Stanislav Lukyanenko Lesson 5</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="topbar">
+      <div class="topbar-elem">
+        <a class="topbar-link bay-link">Бухта</a>
+      </div>
+      <div class="topbar-elem">
+        <a class="topbar-link ship-link">Мой корабль</a>
+      </div>
+      <div  class="topbar-elem">
+        <a class="topbar-link gallery-ship-link">Галерея кораблей</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <nav class="left-nav-menu">
+
+      
+      <section class="filter">
+        <form class="search" action="#">
+          <div class="search-div">
+            <span class="search-text">Макс. цена</span>
+            <input type="text" class="max-price" />
+          </div>
+          <div class="search-div">
+            <span class="search-text">Мин. цена</span>
+            <input type="text" class="min-price" />
+          </div>
+          <div class="search-div">
+            <span class="search-text">Макс. прочность</span>
+            <input type="text" class="max-ship-hull" />
+          </div>
+          <div class="search-div">
+            <span class="search-text">Мин. прочность</span>
+            <input type="text" class="min-ship-hull" />
+          </div>
+          <input type="reset" value="Сбросить" class="reset-button" />
+        </form>
+      </section>
+
+      <section class="menu">
+        <ul class="left-menu">
+          <li class="left-menu-item">
+            <div class="left-menu-item-button">Паруса</div>
+            <div class="left-menu-description">
+              <ul class="left-menu-description-list">
+                <li class="left-menu-description-list-item">
+                  <a href="#" class="left-menu-description-link">Шпринтовые</a>
+                </li>
+                <li class="left-menu-description-list-item">
+                  <a href="#" class="left-menu-description-link">Бермудские</a>
+                </li>
+                <li class="left-menu-description-list-item">
+                  <a href="#" class="left-menu-description-link">Гафельные</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="left-menu-item">
+            <div class="left-menu-item-button">Ремонт</div>
+            <div class="left-menu-description">
+              <ul class="left-menu-description-list">
+                <li class="left-menu-description-list-item">
+                  <a href="#" class="left-menu-description-link">Обычный</a>
+                </li>
+                <li class="left-menu-description-list-item">
+                  <a href="#" class="left-menu-description-link">Быстрый</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="left-menu-item">
+            <div class="left-menu-item-button">Пушки</div>
+            <div class="left-menu-description">
+              <ul class="left-menu-description-list">
+                <li class="left-menu-description-list-item">
+                  <a href="#" class="left-menu-description-link">Пушки</a>
+                </li>
+                <li class="left-menu-description-list-item">
+                  <a href="#" class="left-menu-description-link">Кулеврины</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="left-menu-item">
+            <div class="left-menu-item-button">Команда</div>
+            <div class="left-menu-description">
+              <ul class="left-menu-description-list">
+                <li class="left-menu-description-list-item">
+                  <a href="#" class="left-menu-description-link">Салаги</a>
+                </li>
+                <li class="left-menu-description-list-item">
+                  <a href="#" class="left-menu-description-link">Моркие волки</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    </nav>
+
+    <div class="content">
+      <section class="cards">
+        <ul class="cards-list">
+        </ul>
+      </section>
+  
+      <section class="my-ship hidden">
+        <article class="my-ship-card">
+          <img
+              src="http://ic.pics.livejournal.com/filgray/15183826/604048/604048_original.jpg"
+              alt="ship"
+              width="300px"
+              class="my-ship-image"
+          />
+          <h1 class="my-ship-name">Black Pearl</h1>
+          <h1 class="my-ship-classname">"Sparrow"</h1>
+          <div class="numbers">
+              <span class="my-ship-description">class: 30</span>
+              <span class="my-ship-description">ship hull: 1200</span>
+              <span class="my-ship-description">speed: 15</span>
+              <span class="my-ship-description">maneuverability: 70</span>
+              <span class="my-ship-description">beidewind: 10.1</span>
+              <span class="my-ship-description">hold: 640</span>
+              <span class="my-ship-description">team: 72</span>
+              <span class="my-ship-description">weapons: 32</span>
+              <span class="my-ship-description">price: 50000000000</span>
+          </div>
+          <p class="my-ship-text">«Черная Жемчужина» умеренно вооружена.
+            Она несёт тридцать две 12-фунтовые пушки: 18 на пушечной палубе и 14 на верхней палубе.
+            Бортовой залп содержит 16 пушечных ядер общим весом 192 фунта.
+            На «Жемчужине» нет носовых или кормовых орудий, что очень необычно для пиратского судна.
+          </p>
+      </article>
+
+      <div>
+        <article class="captain-card">
+          <img
+            src="https://radiokp.ru/sites/default/files/styles/max_width_1200px/public/2020-03/1_3.jpeg?itok=_RGF8-G_"
+            alt="captain"
+            width="200px"
+          />
+          <div class="captain-info">
+            <span>Имя: Станислав Лукьяненко</span>
+            <span>Класс: 80</span>
+            <span>Урон саблей: 40</span>
+          </div>
+          <div class="captain-info">
+            <span>Возраст: 25</span>
+            <span>Дублонов: 1 213 434 231</span>
+            <span>Урон пистолеты: 100</span>
+          </div>
+      
+        </article>
+      
+        <div class="buy-form">
+          <h1 class="buy-form-header">Заявка на покупку судна</h1>
+          <form action="#" class="buy-form-content">
+            <div class="buy-form-div">
+              <label class="buy-form-item">
+                Имя: 
+                <div class="buy-form-item-div">
+                  <input type="text" class="input-name" />
+                </div>
+              </label>
+              <label class="buy-form-item">
+                Количество: 
+                <div class="buy-form-item-div">
+                  <input type="text" class="input-number" />
+                </div>
+              </label>
+            </div>
+            <div class="buy-form-div">
+              <label class="buy-form-item">
+                Класс: 
+                <div class="buy-form-item-div">
+                  <input type="text" class="input-class" />
+                </div>
+              </label>
+              <label class="buy-form-item">
+                Цена: 
+                <div class="buy-form-item-div">
+                  <input type="text" class="input-price" />
+                </div>
+              </label>
+              <div class="buy-form-button">Отправить</div>
+            </div>
+          </form>
+          <div class="form-result"></div>
+        </div>
+
+        <div class="weather">
+          <h1>Погода</h1>
+          <table>
+            <tr class="date"></tr>
+            <tr class="temperature"></tr>
+          </table>
+        </div>
+      </div>
+      </section>
+
+      <section class="gallery-ship hidden">
+        <div class="slider-content">
+          <input checked type="radio" name="respond" class="slider-radio">
+            <article class="slider">
+                <input checked type="radio" name="slider" id="switch1">
+                <input type="radio" name="slider" id="switch2">
+                <input type="radio" name="slider" id="switch3">
+                <input type="radio" name="slider" id="switch4">
+                <input type="radio" name="slider" id="switch5">
+              <div class="slides">
+                <div class="overflow">
+                  <div class="image">
+                    <article>
+                      <img src="https://postcriticism.ru/wp-content/uploads/2017/05/revenge.jpg"
+                          class="slide-image" />
+                    </article>
+                    <article>
+                      <img src="https://postcriticism.ru/wp-content/uploads/2017/05/ende.jpg"
+                          class="slide-image" />
+                    </article>
+                    <article>
+                      <img src="https://postcriticism.ru/wp-content/uploads/2017/05/pearl.jpg"
+                          class="slide-image" />
+                    </article>
+                    <article>
+                      <img src="https://static.wikia.nocookie.net/pirates/images/c/cd/%D0%9F%D0%A7%D0%96_%D0%A7%D1%91%D1%80%D0%BD%D0%B0%D1%8F_%D0%96%D0%B5%D0%BC%D1%87%D1%83%D0%B6%D0%B8%D0%BD%D0%B0.jpg/revision/latest?cb=20160424081945&path-prefix=ru"
+                          class="slide-image" />
+                    </article>
+                    <article>
+                      <img src="https://postcriticism.ru/wp-content/uploads/2017/05/edin.jpg"
+                          class="slide-image" />
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div id="controls">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <label for="switch5"></label>
+              </div>
+              <div id="active">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <label for="switch5"></label>
+              </div>
+              
+            </article>
+        </div>
+
+        <div class=slider-buttons>
+          <div class="slider-button start-button">Включить автоплей</div>
+          <div class="slider-button stop-button">Выключить автоплей</div>
+        </div>
+
+        <div class="drop-down">
+          <img
+            src="https://i.pinimg.com/originals/35/10/a3/3510a300dbcb9e78d204a8e7ac8ae3f9.jpg"
+            alt="anchor"
+            width="50px"
+          />
+          <div class="drop-down-description">
+            <ul class="drop-down-description-list">
+              <li class="drop-down-description-list-item">Сундук</li>
+              <li class="drop-down-description-list-item">Хрустальный череп</li>
+              <li class="drop-down-description-list-item">Ожерелье</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="modal">
+      <div class="modal-card">
+        <div class="modal-close">✘</div>
+        <article class="card-item">
+          <img
+              src="https://i.pinimg.com/originals/9a/5d/c8/9a5dc8195d864b6ce7d87b599b58e191.jpg"
+              alt="ship"
+              height="250px"
+              width="200px"
+              class="card-image"
+          />
+          <h1 class="modal-card-name"></h1>
+          <h1 class="modal-card-classname"></h1>
+          <div class="modal-numbers">
+            <div class="modal-div">
+              <span class="modal-card-description classification">class: </span>
+              <span class="modal-card-description ship-hull">ship hull: </span>
+              <span class="modal-card-description speed">speed: </span>
+            </div>
+            <div class="modal-div">
+              <span class="modal-card-description maneuverability">maneuverability: </span>
+              <span class="modal-card-description beidewind">beidewind: </span>
+              <span class="modal-card-description hold">hold: </span>
+            </div>
+            <div class="modal-div">
+              <span class="modal-card-description team">team: </span>
+              <span class="modal-card-description weapons">weapons: </span>
+              <span class="modal-card-description price">price: </span>
+            </div>
+          </div>
+          <p class="modal-card-text"></p>
+      </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-navigation">
+      <img
+        src="https://static4.depositphotos.com/1006748/286/i/600/depositphotos_2861062-stock-photo-pirate-flag.jpg"
+        alt="badge"
+        class="footer-image"
+      />
+      <img
+        src="https://storage.googleapis.com/multi-static-content/previews/artage-io-thumb-8ecd2b31d508ae93046c63204478be24.png"
+        alt="chest"
+        class="footer-image"
+      />
+      <div>
+        <h1 class="footer-heading">Капитан:</h1>
+        <h2 class="captain">Лукьяненко Станислав</h2>
+        <span class="footer-description">Отчаянный пират, человек чести</span>
+        <h1 class="footer-heading">Судно:</h1>
+        <h2 class="captain">Каравелла: "Чёрная Жемчужина"</h2>
+      </div>
+      <img 
+        src="https://storage.googleapis.com/multi-static-content/previews/artage-io-thumb-8ecd2b31d508ae93046c63204478be24.png"
+        alt="chest" 
+        class="footer-image"
+      />
+      <img
+        src="https://static4.depositphotos.com/1006748/286/i/600/depositphotos_2861062-stock-photo-pirate-flag.jpg"
+        alt="badge"
+        class="footer-image"
+      />
+    </nav>
+  </footer>
+</body>
+
+</html>

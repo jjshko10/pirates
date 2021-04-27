@@ -1,0 +1,39 @@
+.cards-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ship-cards {
+    width: 25%;
+    margin: 20px 0;
+}
+
+.ship-cards:hover {
+    cursor: pointer;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-name {
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.card-classname {
+    margin: 0 0 10px 0;
+}
+
+.card-description {
+    font-style: italic;
+}
+
+.card-text {
+    text-align: center;
+    margin-top: 10px;
+}

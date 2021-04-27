@@ -1,0 +1,52 @@
+
+@import url('./css/reset.css');
+@import url('./css/normalize.css');
+@import url('./css/header.css');
+@import url('./css/menu.css');
+@import url('./css/filter.css');
+@import url('./css/cards.css');
+@import url('./css/myShip.css');
+@import url('./css/captainCard.css');
+@import url('./css/buyForm.css');
+@import url('./css/galleryShip.css');
+@import url('./css/slider.css');
+@import url('./css/modal.css');
+@import url('./css/footer.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #b9deed, #efefef);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  padding: 75px 0 180px 0;
+}
+
+.left-nav-menu {
+  min-width: 250px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  padding-left: 250px;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,16 @@
+.filter {
+    margin-bottom: 30px;
+}
+
+.search, .search-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-div {
+    text-align: center;
+}
+
+.search-text {
+    font-weight: bold;
+}

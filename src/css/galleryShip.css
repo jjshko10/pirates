@@ -1,0 +1,9 @@
+.gallery-ship {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drop-down {
+    cursor: pointer;
+}
